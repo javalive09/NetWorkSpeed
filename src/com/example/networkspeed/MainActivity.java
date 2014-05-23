@@ -15,13 +15,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
 	ProgressBar pb = null;
 	Button bt = null;
 	AsyncTask<Void, Integer, String> mAsynTask = null;
+	private static final String TEST = "点击测试";
+	private static final String TESTING = "测试中";
 	private static final String PREFIX = "测试\n";
 	private static final String SUFFIX = "Mb/s";
 	private static final String[] URLS = {"www.baidu.com","www.youku.com","www.qq.com"};
@@ -33,17 +34,14 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         pb = (ProgressBar) findViewById(R.id.pb);
         bt = (Button) findViewById(R.id.start);
-        String speed = PREFIX + 0 + SUFFIX;
-        bt.setText(speed);
+        bt.setText(TEST);
         
     }    
     
 
 	public void start(View button) {
     	
-    	if(mAsynTask == null) {
-	    	mAsynTask = new AsyncTask<Void, Integer, String>() {
-	
+    	new AsyncTask<Void, Integer, String>() {
 	
 				@Override
 				protected String doInBackground(Void... params) {
@@ -54,8 +52,8 @@ public class MainActivity extends Activity {
 				protected void onPreExecute() {
 					super.onPreExecute();
 					pb.setVisibility(View.VISIBLE);
-					String speed = PREFIX + 0 + SUFFIX;
-			        bt.setText(speed);
+			        bt.setText(TESTING);
+			        bt.setClickable(false);
 				}
 	
 				@Override
@@ -64,14 +62,10 @@ public class MainActivity extends Activity {
 					pb.setVisibility(View.INVISIBLE);
 					speed = PREFIX + speed + SUFFIX;
 					bt.setText(speed);
-					mAsynTask = null;
+					bt.setClickable(true);
 				}
-				
 	    		
 	    	}.execute();
-    	}else {
-    		Toast.makeText(getApplication(), "正在测试", Toast.LENGTH_LONG).show();
-    	}
     }
     
     
