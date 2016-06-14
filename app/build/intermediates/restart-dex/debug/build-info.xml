@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="xxxhdpi"
+    format="7"
+    timestamp="112352245641399"
+    token="8634759282930402559" >
+
+    <task
+        name="javac"
+        duration="244" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="35" />
+    <task
+        name="verifier"
+        duration="10" />
+
+    <artifact
+        location="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+        type="DEX" />
+
+    <build timestamp="111749133629603" >
+        <artifact
+            location="/Users/peter/git/NetWorkSpeed/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+    <build timestamp="111983626686643" >
+        <artifact
+            location="/Users/peter/git/NetWorkSpeed/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build timestamp="112352245641399" >
+        <artifact
+            location="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>
