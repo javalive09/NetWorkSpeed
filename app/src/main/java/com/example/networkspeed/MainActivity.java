@@ -9,44 +9,39 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends Activity {
 
 	ProgressBar pb = null;
-	TextView bt = null;
+	Button bt = null;
 	AsyncTask<Void, Integer, String> mAsynTask = null;
 	private static final String TEST = "点击测试";
 	private static final String TESTING = "测试中";
 	private static final String PREFIX = "测试\n";
 	private static final String SUFFIX = "Mb/s";
-	private static final String[] URLS = {
-			"www.baidu.com",
-			"www.youku.com",
-			"www.qq.com"};
-	private boolean cancelTest = false;
+	private static final String[] URLS = {"www.baidu.com","www.youku.com","www.qq.com"};
+
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_networkspeed);
+		setContentView(R.layout.activity_main);
 		pb = (ProgressBar) findViewById(R.id.pb);
-		bt = (TextView) findViewById(R.id.start);
-		if(bt != null) {
-			bt.setText(TEST);
-		}
+		bt = (Button) findViewById(R.id.start);
+		bt.setText(TEST);
+
 	}
+
 
 	public void start(View button) {
 
-		mAsynTask = new AsyncTask<Void, Integer, String>() {
+		new AsyncTask<Void, Integer, String>() {
 
 			@Override
 			protected String doInBackground(Void... params) {
@@ -73,25 +68,16 @@ public class MainActivity extends AppCompatActivity{
 		}.execute();
 	}
 
-	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		cancelTest();
-	}
 
-	private void cancelTest() {
-		cancelTest = true;
-		if(mAsynTask != null) {
-			mAsynTask.cancel(true);
-		}
-	}
 
 	private String testUrlSpeed(String urls[]) {
 		Float sumSpeed = 0f;
-		Float averageSpeed;
+		Float averageSpeed = 0f;
 		Float speed = 0f;
 		for(String url: urls) {
-			ArrayList<String> commands = new ArrayList<>();
+			ArrayList<String> commands = new ArrayList<String>();
+			commands.add("su");
+			commands.add("|");
 			commands.add("ping");
 			commands.add("-c");
 			commands.add("5");
@@ -103,21 +89,19 @@ public class MainActivity extends AppCompatActivity{
 
 			ProcessBuilder pb = new ProcessBuilder(commands);
 			try {
-				if(cancelTest) {
-					return "";
-				}
 				Process process = pb.start();
 				InputStream in = process.getInputStream();
 				BufferedReader br = new BufferedReader(new InputStreamReader(in));
-				String s;
-				ArrayList<Float> times = new ArrayList<>();
-				while((s = br.readLine())!= null) {
-					Log.i("peter", "cmd srt =" + s);
+				String s = null;
+				ArrayList<Float> times = new ArrayList<Float>();
+				while((s = br.readLine())!= null)
+				{
+					System.out.println(s);
 					Float time = matcher(s);
 					if(time != null) {
 						times.add(time);
 					}
-					Log.i("peter", "cmd time =" + time);
+					System.out.println(time);
 				}
 				Float AllTimes = 0f;
 				for(Float time : times) {
@@ -135,7 +119,7 @@ public class MainActivity extends AppCompatActivity{
 		}
 		averageSpeed = sumSpeed/urls.length;
 
-		return getSpeedString(averageSpeed * 8);
+		return getSpeedString(averageSpeed);
 
 	}
 
@@ -155,10 +139,11 @@ public class MainActivity extends AppCompatActivity{
 			int start = mat.indexOf("=") + 1;
 			int end = mat.indexOf(" ");
 			String time = mat.substring(start, end);
-			return Float.valueOf(time);
+			Float d = Float.valueOf(time);
+			return d;
 		}
 		return null;
 	}
-        
+
 
 }
