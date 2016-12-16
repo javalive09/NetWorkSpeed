@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 	private static final String TEST = "点击测试";
 	private static final String TESTING = "测试中";
 	private static final String PREFIX = "测试\n";
-	private static final String SUFFIX = "Mb/s";
+	private static final String SUFFIX = "kb/s";
 	private static final String[] URLS = {"www.baidu.com","www.youku.com","www.qq.com"};
 
 
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 
 				Float averageTime = AllTimes/times.size();
 
-				speed = 1000 / averageTime / 8 ;
+				speed = 1024 * 8 / averageTime * 1000 / 1024;
 
 			} catch (IOException e) {
 				e.printStackTrace();

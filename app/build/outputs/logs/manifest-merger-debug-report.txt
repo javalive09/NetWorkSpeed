@@ -25,9 +25,6 @@ MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/peter/git/NetWorkSp
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/peter/git/NetWorkSpeed/app/src/main/AndroidManifest.xml:13:9-41
 	android:allowBackup
@@ -56,9 +53,6 @@ uses-sdk
 INJECTED from /Users/peter/git/NetWorkSpeed/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
