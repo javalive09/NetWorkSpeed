@@ -2,60 +2,58 @@
 <items version="2" >
 
     <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_646640886615a1a283fd096086830b806b4193fb/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_9b2b8d8ae5649970b1ad8f68abe3a9efdb8ae420/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="d202ef8a89d5e8b8420747105bc8fe6475162486">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c67a3e940c759d26a9be997bb71dd7c990036fb8/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="33d1dc015a6d4c6fb83fc98d007c2c8f03809af9">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_111a52bd8d0d96e27babe29639ae5ec3af389bd8/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_88167a8b93d62df11787b66b4366f94119fab029/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_2beb18860c4459281257211df5e5752cc7df0575/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_88ba556c50f29feb52dd4aed8d74d0680c1eef3e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/peter/development/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/peter/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
         revision="23.0.3"
         sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_c4a9a365fbdc6bc9ae63014da0b688a934258a17/classes.dex" />
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_022f3cdc1647229139b6c10fa2db03fa3dc67750.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_88167a8b93d62df11787b66b4366f94119fab029.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_88ba556c50f29feb52dd4aed8d74d0680c1eef3e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_2beb18860c4459281257211df5e5752cc7df0575.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_9b2b8d8ae5649970b1ad8f68abe3a9efdb8ae420.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/peter/git/NetWorkSpeed/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/peter/git/NetWorkSpeed/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_646640886615a1a283fd096086830b806b4193fb.jar" />
     </item>
 
 </items>

@@ -76,13 +76,11 @@ public class MainActivity extends Activity {
 		Float speed = 0f;
 		for(String url: urls) {
 			ArrayList<String> commands = new ArrayList<String>();
-			commands.add("su");
-			commands.add("|");
 			commands.add("ping");
 			commands.add("-c");
 			commands.add("5");
 			commands.add("-s");
-			commands.add("1000");
+			commands.add("1024");
 			commands.add("-i");
 			commands.add("2");
 			commands.add(url);
@@ -125,8 +123,8 @@ public class MainActivity extends Activity {
 
 	public String getSpeedString(Float speed) {
 		DecimalFormat df = new DecimalFormat();
-		df.setMaximumFractionDigits(2);
-		df.setMinimumFractionDigits(2);
+		df.setMaximumFractionDigits(0);
+		df.setMinimumFractionDigits(0);
 		return df.format(speed);
 	}
 
